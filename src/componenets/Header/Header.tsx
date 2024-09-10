@@ -16,7 +16,7 @@ export const Header = () => {
     <H.HeaderAndShowDown>
       <H.Header>
           <H.Logo>
-            <H.Img src='public/money.svg'/>
+            <H.Img src='/money.svg'/>
           </H.Logo>
           <H.List>
               <H.ListItem onMouseEnter={() => setShowDown(-1)} onMouseLeave={() => setShowDown(-1)} onClick={() => setIsSelected('home')} className={ isSelected === 'home' ? 'selected' : 'item'}>Pagina Inicial <span className='dot'/></H.ListItem>

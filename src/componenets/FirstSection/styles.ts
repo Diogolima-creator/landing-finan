@@ -2,18 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width:100%;
-  height:83vh;
-  padding-top:60px;
+  height:100%;
+  padding:80px 0;
   display:flex;
   align-items:center;
   justify-content:center;
 
-  @media screen and (max-width: 767px) {
-    height:60vh;
-  }
 
   @media screen and (max-width: 424px) {
-    height:100%;
     padding: 80px 0;
   }
 `;
@@ -24,8 +20,8 @@ export const Items = styled.div`
   display:flex;
   justify-content:space-around;
 
-   @media screen and (max-width: 1439px) {
-      width:90%;
+   @media screen and (max-width: 1440px) {
+      width:100%;
   }
 
    @media screen and (max-width: 767px) {
@@ -41,7 +37,13 @@ export const Item = styled.div`
   justify-content:space-evenly;
   width:48%;
 
-   @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
+    width:90%;
+    align-items:center;
+    text-align:center;
+  }
+
+   @media screen and (max-width: 768px) {
     width:90%;
     align-items:center;
     text-align:center;
@@ -59,7 +61,11 @@ export const ItemRight = styled.div`
   justify-content:space-evenly;
   width:48%;
 
-   @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
+    display:none;
+  }
+
+   @media screen and (max-width: 768px) {
       display:none;
   }
   
@@ -70,13 +76,14 @@ export const Title = styled.h1`
   margin:0;
   font-size:56px;
   letter-spacing:1.25px;
+  padding:40px 0;
 
   span{
     color:rgb(25, 118, 210);
     border-bottom:2px solid ;
   }
 
-   @media screen and (max-width: 1439px) {
+   @media screen and (max-width: 1024px) {
     font-size:48px;
   }
 
@@ -91,6 +98,7 @@ export const Text = styled.p`
   letter-spacing:0.5px;
   font-weight:300;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
+  padding:40px 0;
 
   @media screen and (max-width: 767px) {
       font-size:15px;
@@ -140,6 +148,7 @@ export const Security = styled.div`
   width:100%;
   display:flex;
   align-items:center;
+  padding:25px 0;
 
   @media screen and (max-width: 424px) {
     flex-direction:column;

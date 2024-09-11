@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width:100%;
-  height:80vh;
-  padding-top:60px;
+  height:100%;
+  padding:100px 0;
   display:flex;
   align-items:start;
   justify-content:center;
   background-color:white;
   gap:200px;
-
+  
   @media screen and (max-width: 1439px) {
     padding-top:30px;
     gap:100px;
@@ -34,7 +34,7 @@ export const ItemLogo = styled.div`
 `;
 
 export const Img = styled.img`
-  height:90%;
+  height:650px;
   transform: rotate(350deg);
 `;
 

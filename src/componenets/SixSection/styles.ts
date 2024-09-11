@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width:100%;
-  height:75vh;
-  padding-top:60px;
+  height:100%;
+  padding:60px 0;
   display:flex;
   align-items:center;
   justify-content:end;
@@ -56,33 +56,28 @@ export const Slider = styled.div`
   display:flex;
   gap:25px;
   overflow:hidden;
+  width:100%;
+  justify-content:center;
 
    @media screen and (max-width: 1439px) {
-    width:100%;
     justify-content:center;
   }
 `;
 
 
 export const Card = styled.div`
-  height:75%;
-  min-width:250px;
-  max-width:250px;
+  width:250px;
   border-radius:12px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background-color:white;
   padding:25px;
 
-  @media screen and (max-width: 1600px) {
-    min-width:200px;
-    max-width:200px;
+  @media screen and (max-width: 1599px) {
+    width:200px;
   }
 
   @media screen and (max-width: 1439px) {
-      min-width:150px;
-      max-width:150px;
-      height:85%;
-      padding:15px;
+    width:150px;
   }
 `;
 

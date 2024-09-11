@@ -2,19 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width:100%;
-  height:80vh;
+  height:100%;
   display:flex;
   align-items:center;
   justify-content:end;
+  padding:40px 0;
   background-color:rgba(251, 247, 234, 1);
   gap:200px;
 
-  @media screen and (max-width: 1439px) {
-    height:100vh;
-  }
-
   @media screen and (max-width: 1023px) {
-    height:80vh;
     justify-content:center;
   }
 
@@ -133,19 +129,23 @@ export const Right = styled.div`
 
 export const Img = styled.img`
   position:relative;
-  height:93%;
+  height:700px;
   transform:rotate(353deg);
-  left:255px;
+  left:265px;
+
+  @media screen and (max-width: 1799px) {
+    left:355px;
+  }
 
   @media screen and (max-width: 1599px) {
-    left:430px;
+    left:365px;
   }
 
   @media screen and (max-width: 1439px) {
-    left:600px;
-    height:80%;
+    left:565px;
   }
-`;
+
+`;  
 
 export const BlockIcon = styled.div`
   display:flex;

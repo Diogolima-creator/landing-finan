@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width:100%;
-  height:105vh;
-  padding-top:30px;
+  height:100%;
+  padding:30px 0;
   display:flex;
   align-items:center;
   background-color:white;
@@ -11,12 +11,10 @@ export const Container = styled.div`
   border-bottom:1px solid rgba(127,127,127, .3);
 
   @media screen and (max-width: 1439px) {
-    height:105vh;
     justify-content:space-around;
   }
 
    @media screen and (max-width: 767px) {
-    height:100%;
     gap:15px;
     padding-bottom:15px;
   }
@@ -45,9 +43,11 @@ export const List = styled.div`
   flex-direction:column;
   gap:15px;
   height:60%;
+  padding:40px 0;
 
   @media screen and (max-width: 1439px) {
     width:70%;
+    padding:10px 0;
   }
 
   .icon{

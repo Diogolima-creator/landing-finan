@@ -37,7 +37,7 @@ export const SixSection = () => {
       setCards(cards.slice(0,2))
    }
 
-   if(larguraTela < 425 ){
+   if(larguraTela <= 425 ){
     setCards(cards.slice(0,1))
   }
 
